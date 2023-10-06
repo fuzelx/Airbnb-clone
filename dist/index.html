@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Airbnb clone</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <!-- Navbar DESKTOP -->
+    <nav class="bg-white shadow-md hidden md:block">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-semibold text-gray-900">
+                        <img src="/Repo/src/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- User Profile and Search -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h4l-4 5-4-5h4z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6"></path>
+                        </svg>
+                    </a>
+                    <div class="relative">
+                        <input type="text"
+                            class="bg-gray-100 border-2 border-gray-200 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:bg-white focus:border-blue-500"
+                            placeholder="Search...">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 absolute top-3 left-3"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-5.2-5.2M15 9a6 6 0 11-12 0 6 6 0 0112 0z"></path>
+                        </svg>
+                    </div>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="flex border border-neutral-400 hover:shadow-md p-2 rounded-full">
+                        <img src="/Repo/src/svgexport-6.svg" alt="">
+                        <img src="/Repo/src/svgexport-7.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- DESKTOP NAVBAR ENDS -->
+
+
+    <!-- MOBILE TOP SEARCH BAR -->
+    <nav class=" bg-white p-3 shadow-lg sticky md:hidden">
+        <div class="flex justify-center items-center">
+            <div class="relative">
+                <input type="text"
+                    class="shadow-lg placeholder:text-black border   rounded-full py-2 pl-10 pr-4 focus:outline-none bg-white focus:border-black"
+                    placeholder="Anywhere?">
+                <img src="/Repo/src/svgexport-12.svg" class="w-6 h-6 text-gray-400 absolute top-3 left-3" alt="">
+            </div>
+
+        </div>
+    </nav>
+    <!-- MOBILE TOP SEARCH BAR ENDS -->
+
+    <!-- MOBILE BOTTOM MAIN NAVBAR -->
+    <nav  class="bg-white p-4 bottom-0 z-0 shadow-lg md:hidden border border-neutral-300 fixed right-0 left-0  ">
+        <div class="flex space-x-6 justify-center items-center">
+            <div class="flex justify-center flex-col items-center">
+                <img src="/Repo/src/svgexport-12.svg" class="w-5 h-5" alt="">
+                <a href="#" class="text-neutral-500 text-sm">Explore</a>
+            </div>
+            <div class="flex justify-center flex-col items-center">
+                <img src="/Repo/src/svgexport-13.svg" class="w-5 h-5" alt="">
+                <a href="#" class="text-neutral-500 text-sm ">Wishlist</a>
+            </div>
+            <div class="flex justify-center flex-col items-center">
+                <img src="/Repo/src/svgexport-14.svg" class="w-5 h-5" alt="">
+                <a href="#" class="text-neutral-500 text-sm">Log In</a>
+            </div>
+        </div>
+    </nav>
+    <!-- MOBILE BOTTOM NAVBAR ENDS -->
+
+    <!-- CONTENT -->
+    <div class="p-3 m-2">
+        <div class="flex justify-evenly flex-wrap items-center  p-1">
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+            
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-pixabay-209296.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+            
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-luis-yanez-206172.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+            
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-pixabay-53610.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+            
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-luis-yanez-206172.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-luis-yanez-206172.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-pixabay-209296.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+
+            </div>
+
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <div>
+                    <img src="/Repo/src/pexels-binyamin-mellish-186077.jpg" alt=""
+                        class="w-full sm:w-64 md:w-64 h-auto rounded-lg">
+                </div>
+                <div class="flex justify-between mt-3">
+                    <p class="text-black font-bold text-left">Stylish home</p>
+
+                    <div class="flex ">
+                        <img src="/Repo/src/svgexport-15.svg" alt="" class="w-5 h-5">
+                        <p class="ml-2">4.8</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-neutral-500 text-sm">County side</p>
+                    <p class="text-neutral-500 text-sm">15-21 Oct</p>
+                </div>
+                <div>
+                    <p class="text-black font-semibold text-sm">₹14,999 per night</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
